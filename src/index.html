@@ -8,8 +8,8 @@
     <title>Project Tailwind dengan NPM</title>
   </head>
 
-  <body class="h-screen flex items-center justify-center bg-teal-700">
-    <div class="max-w-sm mx-auto p-12 bg-white rounded-lg shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6   ">
+  <body class="h-screen flex items-center justify-center bg-teal-700 dark:bg-slate-900 ">
+    <div class="max-w-sm mx-auto p-12 bg-white rounded-lg shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6  dark:bg-slate-500  ">
       <img
         class="h-32 mx-auto rounded-full ring-4 ring-teal-700 sm:flex-shrink-0 transform hover:scale-105 duration-500 "
         src="/images/doni.jpg"
@@ -18,7 +18,11 @@
 
       <div class="text-center space-y-2 sm:text-left ">
         <div>
-          <p class="text-lg text-slate-950 font-bold">Lalu Doni Setiawan</p>
+
+          <img class="sun cursor-pointer h-8 mx-auto" src="/images/light.png" alt="light theme">
+          <img class="moon cursor-pointer h-8 mx-auto" src="/images/dark.png" alt="dark theme">
+
+          <p class="text-lg text-slate-950 font-bold dark:text-white ">Lalu Doni Setiawan</p>
           <p class="text-sm text-slate-700 font-medium">
             Backend Web Developer
           </p>
@@ -30,5 +34,6 @@
         </button>
       </div>
     </div>
+    <script src="/app.js"> </script>
   </body>
 </html>
